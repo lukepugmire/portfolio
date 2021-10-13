@@ -1,0 +1,85 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  .stats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+    padding: 0%;
+    .loading {
+      margin-top: 2%;
+      height: 25px;
+      width: 80%;
+      color: $quaternarycolour;
+      background: $white;
+      display: flex;
+      box-shadow: 1px 1px 4px $white;
+    }
+    .load_html {
+      background: $primarycolour;
+      display: flex;
+      width: 80%;
+      animation: html 120s;
+      padding: 2px 5px;
+    }
+    .load_css {
+      background: $primarycolour;
+      display: flex;
+      width: 75%;
+      animation: css 120s;
+      padding: 2px 5px;
+    }
+    .load_script {
+      background: $primarycolour;
+      display: flex;
+      width: 55%;
+      animation: script 120s;
+      padding: 2px 5px;
+    }
+    .load_react {
+      background: $primarycolour;
+      display: flex;
+      width: 40%;
+      animation: react 120s;
+      padding: 2px 5px;
+    }
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 35%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes script {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes react {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 70%;
+  }
+}

@@ -1,0 +1,92 @@
+.home_background {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/gradient-bg-100.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  overflow-x: hidden;
+  .sol {
+    background: $white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    animation: spin 2s linear infinite;
+  }
+  .neptune {
+    background-image: url("../images/planets/neptune.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 280px;
+    animation: spin 120s linear infinite;
+  }
+  .uranus {
+    background-image: url("../images/planets/uranus.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 180px;
+    animation: spin 120s linear infinite;
+  }
+  .saturn {
+    background-image: url("../images/planets/saturn.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 140px;
+    animation: spin 120s linear infinite;
+  }
+  .jupiter {
+    background-image: url("../images/planets/jupiter.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 100px;
+    animation: spin 120s linear infinite;
+  }
+  .mars {
+    background-image: url("../images/planets/mars.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 80px;
+    animation: spin 120s linear infinite;
+  }
+  .earth {
+    background-image: url("../images/planets/earth.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 60px;
+    animation: spin 120s linear infinite;
+  }
+  .venus {
+    background-image: url("../images/planets/venus.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 40px;
+    animation: spin 120s linear infinite;
+  }
+  .mercury {
+    background-image: url("../images/planets/mercury.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    animation: spin 120s linear infinite;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
